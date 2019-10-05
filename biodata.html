@@ -5,6 +5,31 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+	
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+	@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+	display:table;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -63,31 +88,6 @@ footer {
   text-align: center;
   width: 40%;
   height:300px;
-}
-
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
-}
-	@media only screen and (max-width:800px) {
-  /* For tablets: */
-  .main {
-    width: 80%;
-	display:table;
-    padding: 0;
-  }
-  .right {
-    width: 100%;
-  }
-}
-@media only screen and (max-width:500px) {
-  /* For mobile phones: */
-  .menu, .main, .right {
-    width: 100%;
-  }
 }
 	
 	
