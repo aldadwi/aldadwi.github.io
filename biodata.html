@@ -60,7 +60,7 @@ hr{
 	background-color: blue powder;
 	padding :4px;
 	border-radius: 5px;
-	font-size: 14px;
+	font-size: 25px;
 	color: white;
 	font-family:sans-serif;
 }
@@ -124,6 +124,45 @@ hr{
 	color: white;
 	text-align: center;
 }
+	
+	
+	
+	.container
+{
+	width: 1280px;
+	margin: 70px auto 0;
+	display: flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+
+}
+	
+	.container .box
+{
+	position: relative;
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+	box-sizing:border-box;
+	display: inline-block;
+	
+}
+
+.container .box .imgBox
+{
+	position: relative;
+	overflow: hidden;
+}
+.container .box .imgBox img
+{
+	max-width: 100%;
+	transition: transform 2s;
+}
+	
+.container .box:hover .imgBox img
+{
+	transform: scale(1.2);
+}	
 
 </style>
 <body>
@@ -268,34 +307,43 @@ Kalimat Motivasi	:<i><B> Maintan your standard and dont invest too much</i></B><
 		<h1 class ="title">Informasi Social Media</h1>
 		<div>	  
 		
-		<div class="content">
+		<div class ="container">
+	<div class ="box">
+		<div class="imgBox">
 		<a href ="https://twitter.com/kybeeej/">
-		  <img src ="twitter.png" alt="twitter.png" width="30%" height=90px"/><a>
-		  <b><p style="color:white; font-family:sans-serif;">
+					<img src="twitter.png" height="200px" width="200px"></a>
+					<b><p style="color:white; font-family:sans-serif;">
 		  Find me on twitter, please klik this icon image!!!</p></b>
-		  </div>
-		  
-		<div class="content">
+		</div>
+		</div>
+		
+	<div class ="box">
+		<div class="imgBox">
 		<a href="http://aldjoistask.blogspot.com/">
-		  <img src ="blogger.png" alt="blogger.png"width="30%" height=90px"/><a>
-		  <b><p style="color:white; font-family:sans-serif;">
+					<img src="blogger.png" height="200px" width="200px"></a>
+					 <b><p style="color:white; font-family:sans-serif;">
 		  Find me on blogger, please klik this icon image!!!</p></b>
-		  </div>  
-		 
-
-		<div class="content">
+		</div>
+		</div>
+		
+	<div class ="box">
+		<div class="imgBox">
 		<a href="https://www.instagram.com/aldadwijois/">
-		  <img src ="instagram.png" alt="instagram.png"width="30%" height=90px"/><a>
-		 <b><p style="color:white; font-family:sans-serif;">
+					<img src="instagram.png" height="200px" width="200px"></a>
+					<b><p style="color:white; font-family:sans-serif;">
 		  Find me on Instagram, please klik this icon image!!!</p></b>
-		  </div>
-		  
-         <div class="content">
+		</div>
+		</div>
+		
+		
+	<div class ="box">
+		<div class="imgBox">
 		<a href="https://www.youtube.com/channel/UCc_kdx7Br8l5BORi26v7CHQ">
-		  <img src ="youtube.png" alt="youtube.png"width="30%" height=90px"/><a>
-		  <b><p style="color:white; font-family:sans-serif;">
+					<img src="youtube.png" height="200px" width="200px"></a>
+					 <b><p style="color:white; font-family:sans-serif;">
 		  Find me on youtube, please klik this icon image!!!</p></b>
-		  </div>
+		</div>
+		</div>	
 		  
 		
 		</td>			  
